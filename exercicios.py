@@ -75,12 +75,12 @@ farenheit = (celsius * 9/5) + 32
 print(f"A conversão de {celsius} graus Celsius para Farenheit é {farenheit}")
 """
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
-
+"""
 raio = float(input("Digite o raio do círculo para o cálculo: "))
 area = math.pi * (raio ** 2)
 
 print(f"A área do círculo é {area:.2f} cm quadrados")
-
+"""
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
@@ -144,11 +144,54 @@ print(f"O resultado é: {result}")
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+"""
+nome = input("Digite o seu nome: ")
+if nome.isspace():
+    print("Você digitou apenas espaços")
+    exit()
+elif nome.isdigit():
+    print("Você não digitou uma palavra")
+    exit()
+elif len(nome) == 0:
+    print("Você não digitou seu nome")
+    exit()
 
+idade = int(input("Digite a sua idade: "))
+
+if nome == "Marcelo" and idade > 18:
+    print("Ele é o cara!!!")
+else:
+    print("Aí é o Lucas... Triste.")
+"""
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+"""
+dia_semana = input("Digite um dia da semana: ")
+
+if dia_semana == "Sábado" or dia_semana == "Domingo":
+    print("Mó nice!")
+else:
+    print("Mó chato ae!")
+"""
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+"""
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+if num1 == num2:
+    print("Os números digitados são iguais!")
+else:
+    print(f"Os números digitados não são iguais: foram {num1} e {num2} respectivamente.")
+"""
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+if num1 != num2:
+    print("Os números digitados são diferentes.")
+else:
+    print("Os números digitados são iguais.")
 
 # #### try-except e if
 
