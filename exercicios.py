@@ -24,12 +24,16 @@ result = num1 * num2
 print(F"o resultado da multiplicação dos 2 números é {result}.")
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+try:
+    num1 = int(input("Digite o primeiro número: "))
+    num2 = int(input("Digite o segundo número: "))
+    result = num1 // num2
 
-num1 = int(input("Digite o primeiro número: "))
-num2 = int(input("Digite o segundo número: "))
-result = num1 // num2
-
-print(f"O resultado da divisão é {result}")
+    print(f"O resultado da divisão é {result}")
+except ZeroDivisionError:
+    print("Integer division or modulo by zero")
+except KeyboardInterrupt:
+    print("Não foi inserido um número")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
@@ -192,10 +196,3 @@ if num1 != num2:
 else:
     print("Os números digitados são iguais.")
 
-# #### try-except e if
-
-# 21: Conversor de Temperatura
-# 22: Verificador de Palíndromo
-# 23: Calculadora Simples
-# 24: Classificador de Números
-# 25: Conversão de Tipo com Validação
